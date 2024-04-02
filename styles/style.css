@@ -1,0 +1,263 @@
+* {
+    font-family: "Poppins";
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+nav h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+header , .start-journey-section, .featured-product-section{
+    width: 85%;
+    margin: auto;
+    
+}
+.navbar{
+    width: 45%;
+   display: flex;
+   justify-content: flex-end;
+
+}
+.navbar h5{
+    padding-left: 34px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Start your journey section  */
+.start-journey{
+    display: flex;
+    gap: 40px;
+}
+#start-journey-text-part{
+    margin-top: 120px;
+}
+
+#start-journey-text-part h1{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+   
+}
+#start-journey-text-part p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+#start-journey-text-part button{
+    padding: 8px 20px 8px 20px;
+    border-radius: 41px;
+    border: 0px;
+    background-color: rgb(224, 44, 109);
+    font-weight: 700;
+    color: white;
+}
+#arrow{
+    margin-left: 8px;
+}
+
+#start-journey-image-part{
+    margin-top: 80px;
+    padding-top: 25px;
+    background-image: url(../images/Circle\ design.svg);
+    margin-bottom: 70px;
+}
+
+
+
+/* Brand Section  */
+
+.liner{
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    margin: auto;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Popular collection section  */
+
+.popular-section{
+    width: 80%;
+    margin: auto;
+}
+#popular-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* padding-bottom: 50px; */
+    /* margin-bottom: 50px; */
+}
+.card{
+    
+    padding: 14px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card h2{
+    font-size: 28px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+}
+#amount{
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #FFFFFF;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+}
+
+.see-more{
+    color: #E02C6D;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 50px;
+}
+
+
+/* Featured Product Section  */
+
+.featured-product-section{
+    display: flex;
+    gap: 96px;
+    margin-top: 100px;
+}
+
+.featured-product-section h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.featured-product-section p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.featured-product-section button{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #E02C6D;
+    border: 0px;
+    padding: 10px 24px 10px 24px;
+}
+
+/* footer  */
+.footer{
+    height: 240px;
+    background-color: rgb(10, 8, 38);
+    text-align: center;
+    margin-top: 100px;
+}
+#footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    
+    padding-top: 50px;
+    background-color: rgb(10, 8, 38);
+    color: white;
+}
+.footer p{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(10, 8, 38);
+}
+.div{
+    background-color:  rgb(10, 8, 38);
+    display: flex;
+    gap: 16px;
+    margin-top: 17px;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 576px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav h2{
+        text-align: center;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .start-journey{
+        display: flex;
+        flex-direction: column-reverse;
+        /* flex-direction: row-reverse; */
+    }
+    #start-journey-text-part{
+        margin-top: 0px;
+        text-align: center;
+    }
+    #start-journey-image-part{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+    #start-journey-image-part img{
+        
+        width: 100%;
+    }
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+       
+    }
+    .card{
+    
+       padding: 9%;
+    }
+    .featured-product-section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+    }
+    .featured-img img{
+        width: 100%;
+    }
+}
